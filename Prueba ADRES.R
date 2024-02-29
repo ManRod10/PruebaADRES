@@ -478,7 +478,7 @@ REPS<-dbGetQuery(con,statement = "select * from pres
 
 # se empieza a generar los valores de la API
 query <- "https://maps.googleapis.com/maps/api/geocode/json?address="
-key = "AIzaSyBjorJeYWdKTYRI08zJbVRmqyR3rLorZSc" # Se oculta la key de la API debido a esta es de pago.
+key = "" # Se oculta la key de la API debido a esta es de pago.
 
 # Se reemplazan algunos caracteres que generan problemas
 REPS$direccion <- gsub(pattern = "#",replacement = "",x = REPS$direccion)
